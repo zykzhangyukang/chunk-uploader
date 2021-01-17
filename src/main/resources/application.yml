@@ -1,0 +1,19 @@
+server:
+  port: 8989
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 100MB #最大请求文件的大小
+      max-file-size: 100MB
+      file-size-threshold: 20MB
+  thymeleaf:
+    cache: false
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
